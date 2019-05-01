@@ -1,4 +1,4 @@
-# Publishes artifacts for testing
+# Publishes artifacts for testing...
 
 trigger:
 - master
