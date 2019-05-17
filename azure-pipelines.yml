@@ -30,9 +30,9 @@ steps:
     PathtoPublish: 'Source/Timely.Main/bin/'
     ArtifactName: 'executable'
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'executable-pipelines'
-    targetPath: 'Source/Timely.Main/bin/'
+# - task: PublishPipelineArtifact@0
+#   inputs:
+#     artifactName: 'executable-pipelines'
+#     targetPath: 'Source/Timely.Main/bin/'
 
 #- upload: 'Source/Timely.Main/bin/Release/Timely.Main.exe'
