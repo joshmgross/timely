@@ -30,6 +30,10 @@ steps:
     targetType: 'inline'
     script: 'mkdir Source/Timely.Main/bin/emptyDir'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'mkdir EmptyDirectory'
 
 - task: PublishBuildArtifacts@1
   inputs:
@@ -41,4 +45,7 @@ steps:
     artifactName: 'executable-pipelines'
     targetPath: 'Source/Timely.Main/bin/'
 
-#- upload: 'Source/Timely.Main/bin/Release/Timely.Main.exe'
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'empty-directory'
+    targetPath: 'EmptyDirectory'
