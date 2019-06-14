@@ -45,7 +45,7 @@ steps:
     artifactName: 'executable-pipelines'
     targetPath: 'Source/Timely.Main/bin/'
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'empty-directory'
-    targetPath: 'EmptyDirectory'
+# - task: PublishPipelineArtifact@0
+#   inputs:
+#     artifactName: 'empty-directory'
+#     targetPath: 'EmptyDirectory'
