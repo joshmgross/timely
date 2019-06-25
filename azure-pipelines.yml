@@ -37,13 +37,13 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Source/Timely.Main/bin/'
-    ArtifactName: 'Release'
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'release'
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'executable-pipelines'
-    targetPath: 'Source/Timely.Main/bin/'
+# - task: PublishPipelineArtifact@0
+#   inputs:
+#     artifactName: 'executable-pipelines'
+#     targetPath: 'Source/Timely.Main/bin/'
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
