@@ -38,7 +38,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'release'
+    ArtifactName: 'Release'
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
