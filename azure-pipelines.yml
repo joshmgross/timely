@@ -42,7 +42,7 @@ steps:
 
 - task: PublishPipelineArtifact@0
   inputs:
-    artifactName: 'PipelineRelease'
+    artifactName: 'pipelinerelease'
     targetPath: 'Source/Timely.Main/bin/'
 
 # - task: PublishPipelineArtifact@0
