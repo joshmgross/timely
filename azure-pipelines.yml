@@ -1,7 +1,7 @@
 # Publishes artifacts for testing...
 
-trigger:
-- master
+trigger: none
+pr: none
 
 pool: Default
 # pool:
@@ -38,7 +38,7 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'Source/Timely.Main/bin/'
-    ArtifactName: 'executable'
+    ArtifactName: 'Release'
 
 - task: PublishPipelineArtifact@0
   inputs:
