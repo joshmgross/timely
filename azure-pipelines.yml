@@ -35,15 +35,15 @@ steps:
 #     targetType: 'inline'
 #     script: 'mkdir EmptyDirectory'
 
-# - task: PublishBuildArtifacts@1
-#   inputs:
-#     PathtoPublish: 'Source/Timely.Main/bin/Release'
-#     ArtifactName: 'Release'
-
-- task: PublishPipelineArtifact@0
+- task: PublishBuildArtifacts@1
   inputs:
-    artifactName: 'PipelineArtifactWithSize'
-    targetPath: 'Source/Timely.Main/bin/'
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'Release'
+
+# - task: PublishPipelineArtifact@0
+#   inputs:
+#     artifactName: 'PipelineArtifactWithSize'
+#     targetPath: 'Source/Timely.Main/bin/'
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
