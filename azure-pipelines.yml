@@ -46,7 +46,7 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
     TargetPath: '$(Build.ArtifactStagingDirectory)'
-    SilentCopy: true
+    SilentCopy: false
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
