@@ -1,5 +1,4 @@
 # Publishes artifacts for testing...
-
 trigger: none
 pr: none
 
@@ -35,10 +34,19 @@ steps:
 #     targetType: 'inline'
 #     script: 'mkdir EmptyDirectory'
 
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: ''
+#     ArtifactName: 'Release'
+#     SilentCopy: true
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'Release'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '$(Build.ArtifactStagingDirectory)'
+    SilentCopy: true
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
