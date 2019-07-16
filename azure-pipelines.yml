@@ -34,19 +34,19 @@ steps:
 #     targetType: 'inline'
 #     script: 'mkdir EmptyDirectory'
 
-# - task: PublishBuildArtifacts@1
-#   inputs:
-#     PathtoPublish: ''
-#     ArtifactName: 'Release'
-#     SilentCopy: true
-
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'container'
-    publishLocation: 'FilePath'
-    TargetPath: '$(Build.ArtifactStagingDirectory)'
-    SilentCopy: false
+    PathtoPublish: ''
+    ArtifactName: 'Release'
+    SilentCopy: true
+
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: 'Source/Timely.Main/bin/Release'
+#     ArtifactName: 'container'
+#     publishLocation: 'FilePath'
+#     TargetPath: '$(Build.ArtifactStagingDirectory)'
+#     SilentCopy: false
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
