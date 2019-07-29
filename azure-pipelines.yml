@@ -40,20 +40,24 @@ steps:
 #     ArtifactName: 'Release'
 #     SilentCopy: true
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'Vienna'
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: 'Source/Timely.Main/bin/Release'
+#     ArtifactName: 'Vienna'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'Tokyo'
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: 'Source/Timely.Main/bin/Release'
+#     ArtifactName: 'Tokyo'
+#     publishLocation: FilePath
+
 
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
     ArtifactName: 'London'
+    publishLocation: FilePath
+    TargetPath: Source/Timely.Main/publish
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
