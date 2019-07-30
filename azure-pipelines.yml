@@ -2,9 +2,9 @@
 trigger: none
 pr: none
 
-pool: Default
-# pool:
-#  vmImage: windows-latest
+# pool: Default
+pool:
+ vmImage: windows-latest
 
 variables:
   solution: '**/*.sln'
@@ -59,10 +59,10 @@ steps:
 #     publishLocation: FilePath
 #     TargetPath: Source/Timely.Main/publish
 
-# - task: PublishPipelineArtifact@0
-#   inputs:
-#     artifactName: 'PipelineArtifactWithSize'
-#     targetPath: 'Source/Timely.Main/bin/'
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'Tokyo'
+    targetPath: 'Source/Timely.Main/bin/'
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
