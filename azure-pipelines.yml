@@ -50,7 +50,7 @@ steps:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
     ArtifactName: 'Tokyo'
     publishLocation: 'FilePath'
-    TargetPath: 'Source/'
+    TargetPath: '$(Build.SourcesDirectory)'
 
 
 # - task: PublishBuildArtifacts@1
