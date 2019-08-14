@@ -51,6 +51,7 @@ steps:
     ArtifactName: 'Tokyo'
     publishLocation: 'FilePath'
     TargetPath: 'C:\Users\jogros\filePathArtifact'
+    FileCopyOptions: "/nfl"
 
 
 # - task: PublishBuildArtifacts@1
