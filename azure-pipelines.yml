@@ -52,7 +52,7 @@ steps:
     publishLocation: 'FilePath'
     TargetPath: 'Source/Publish'
     Parallel: true
-    FileCopyOptions: '/NFL /NDL'
+    FileCopyOptions: '/NFL'
 
 # - task: PublishBuildArtifacts@1
 #   inputs:
