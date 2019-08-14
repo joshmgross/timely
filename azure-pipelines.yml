@@ -50,6 +50,7 @@ steps:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
     ArtifactName: 'Tokyo'
     publishLocation: 'FilePath'
+    TargetPath: 'Source/Publish'
     Parallel: true
     FileCopyOptions: '/NFL /NDL'
 
