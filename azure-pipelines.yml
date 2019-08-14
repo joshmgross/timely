@@ -40,17 +40,18 @@ steps:
 #     ArtifactName: 'Release'
 #     SilentCopy: true
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'Vienna'
-
 # - task: PublishBuildArtifacts@1
 #   inputs:
 #     PathtoPublish: 'Source/Timely.Main/bin/Release'
-#     ArtifactName: 'Tokyo'
-#     publishLocation: FilePath
+#     ArtifactName: 'Vienna'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'Tokyo'
+    publishLocation: 'FilePath'
+    Parallel: true
+    FileCopyOptions: '/NFL /NDL'
 
 # - task: PublishBuildArtifacts@1
 #   inputs:
@@ -59,10 +60,10 @@ steps:
 #     publishLocation: FilePath
 #     TargetPath: Source/Timely.Main/publish
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'Tokyo'
-    targetPath: 'Source/Timely.Main/bin/'
+# - task: PublishPipelineArtifact@0
+#   inputs:
+#     artifactName: 'Tokyo'
+#     targetPath: 'Source/Timely.Main/bin/'
 
 # - task: PublishPipelineArtifact@0
 #   inputs:
