@@ -53,7 +53,7 @@ steps:
     TargetPath: 'C:\Users\jogros\filePathArtifact'
     Parallel: true
     ParallelCount: 4
-    FileCopyOptions: '/ndl /nfl'
+    FileCopyOptions: '/NDL /NFL'
 
 
 # - task: PublishBuildArtifacts@1
