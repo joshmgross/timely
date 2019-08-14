@@ -51,7 +51,9 @@ steps:
     ArtifactName: 'Tokyo'
     publishLocation: 'FilePath'
     TargetPath: 'C:\Users\jogros\filePathArtifact'
-    FileCopyOptions: "/nfl /ndl"
+    Parallel: true
+    ParallelCount: 4
+    FileCopyOptions: '/ndl /nfl'
 
 
 # - task: PublishBuildArtifacts@1
