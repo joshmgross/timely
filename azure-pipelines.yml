@@ -43,19 +43,19 @@ steps:
 #     ArtifactName: 'Release'
 #     SilentCopy: true
 
-# - task: PublishBuildArtifacts@1
-#   inputs:
-#     PathtoPublish: 'Source/Timely.Main/bin/Release'
-#     ArtifactName: 'Vienna'
-
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'Tokyo'
-    publishLocation: 'FilePath'
-    TargetPath: 'C:\Users\jogros\filePathArtifact'
-    Parallel: true
-    ParallelCount: 4
+    ArtifactName: 'Vienna'
+
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: 'Source/Timely.Main/bin/Release'
+#     ArtifactName: 'Tokyo'
+#     publishLocation: 'FilePath'
+#     TargetPath: 'C:\Users\jogros\filePathArtifact'
+#     Parallel: true
+#     ParallelCount: 4
 
 
 # - task: PublishBuildArtifacts@1
