@@ -2,9 +2,12 @@
 trigger: none
 pr: none
 
-pool: Default
+# pool: Default
 # pool:
 #  vmImage: windows-latest
+
+pool:
+  vmImage: win1803
 
 variables:
   solution: '**/*.sln'
