@@ -63,7 +63,6 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
     TargetPath: '\\localhost\c$\users\jogros\'
-    Parallel: true
 
 
 # - task: PublishBuildArtifacts@1
