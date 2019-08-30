@@ -2,12 +2,12 @@
 trigger: none
 pr: none
 
-# pool: Default
+pool: Default
 # pool:
 #  vmImage: windows-latest
 
-pool:
-  vmImage: win1803
+# pool:
+#   vmImage: win1803
 
 variables:
   solution: '**/*.sln'
@@ -43,19 +43,26 @@ steps:
 #     ArtifactName: 'Release'
 #     SilentCopy: true
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'Source/Timely.Main/bin/Release'
-    ArtifactName: 'Vienna'
-
 # - task: PublishBuildArtifacts@1
 #   inputs:
 #     PathtoPublish: 'Source/Timely.Main/bin/Release'
+#     ArtifactName: 'Vienna'
+
+# - task: PublishBuildArtifacts@1
+#   inputs:
+#     PathtoPublish: '
 #     ArtifactName: 'Tokyo'
 #     publishLocation: 'FilePath'
 #     TargetPath: 'C:\Users\jogros\filePathArtifact'
 #     Parallel: true
 #     ParallelCount: 4
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\localhost\c$\users\jogros\''
 
 
 # - task: PublishBuildArtifacts@1
