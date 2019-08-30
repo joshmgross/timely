@@ -62,7 +62,7 @@ steps:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
-    TargetPath: '\\localhost\c$\users\jogros\''
+    TargetPath: '\\localhost\c$\users\jogros\'
 
 
 # - task: PublishBuildArtifacts@1
