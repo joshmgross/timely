@@ -65,7 +65,8 @@ steps:
     targetType: 'inline'
     script: |
       $ArtifactDir = $env:BUILD_ARTIFACTSTAGINGDIRECTORY
-      $ArtifactDir = "\\localhost\$ArtifactDir.Replace(":", "$")"
+      $ArtifactDir = $ArtifactDir.Replace(":", "$")
+      $ArtifactDir = "\\localhost\$ArtifactDir"
       echo $ArtifactDir
       echo '##vso[task.setvariable variable=LocalFileShare]$ArtifactDir'
 
