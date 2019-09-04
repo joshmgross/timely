@@ -64,6 +64,7 @@ steps:
     publishLocation: 'FilePath'
     TargetPath: '\\localhost\c$\users\jogros\'
     Parallel: true
+    FileCopyOptions: '/NDL'
 
 
 # - task: PublishBuildArtifacts@1
