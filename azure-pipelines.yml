@@ -58,15 +58,51 @@ steps:
 #     ParallelCount: 4
 
 - task: PublishBuildArtifacts@1
+  displayName: "PBA No Options"
   inputs:
     PathtoPublish: 'Source/Timely.Main/bin/Release'
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
     TargetPath: '\\localhost\c$\users\jogros\'
 
-# Parallel: true
-# FileCopyOptions: '/NDL /NFL'
+- task: PublishBuildArtifacts@1
+  displayName: "PBA All Options"
+  inputs:
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\localhost\c$\users\jogros\'
+    Parallel: true
+    FileCopyOptions: '/NDL /NFL'
 
+- task: PublishBuildArtifacts@1
+  displayName: "PBA Parallel Only"
+  inputs:
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\localhost\c$\users\jogros\'
+    Parallel: true
+
+- task: PublishBuildArtifacts@1
+  displayName: "PBA File Copy Options Only 1"
+  inputs:
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\localhost\c$\users\jogros\'
+    Parallel: true
+    FileCopyOptions: '/NFL'
+
+- task: PublishBuildArtifacts@1
+  displayName: "PBA File Copy Options Only 2"
+  inputs:
+    PathtoPublish: 'Source/Timely.Main/bin/Release'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\localhost\c$\users\jogros\'
+    Parallel: true
+    FileCopyOptions: '/NDL /NFL'
 
 # - task: PublishBuildArtifacts@1
 #   inputs:
